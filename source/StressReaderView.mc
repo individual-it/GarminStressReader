@@ -63,7 +63,7 @@ class StressReaderView extends WatchUi.View {
             stressValue = Math.round(sample.data as Float).toNumber();
             sample = stressIterator.next();
         }
-    return stressValue;
-}
+        return stressValue;
+    }
 
 }

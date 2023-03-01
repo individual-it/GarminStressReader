@@ -1,6 +1,7 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.ActivityRecording;
 
 class StressReaderApp extends Application.AppBase {
 
@@ -18,7 +19,7 @@ class StressReaderApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new StressReaderView() ] as Array<Views or InputDelegates>;
+        return [ new StressReaderView(), new StressReaderDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }
